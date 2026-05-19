@@ -987,4 +987,112 @@ body{
   animation-delay:0.55s;
 }
 
+/* MOBILE */
+
+@media(max-width:768px){
+
+  /* NAVBAR */
+
+  .navbar{
+    padding:
+    18px 5%;
+
+    gap:12px;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .nav-logo{
+    font-size:1rem;
+  }
+
+  .nav-btn{
+    padding:
+    12px 18px;
+
+    font-size:0.82rem;
+
+    border-radius:12px;
+  }
+
+  /* HERO */
+
+  .hero{
+    height:auto;
+
+    min-height:100vh;
+
+    padding:
+    140px 5% 80px 5%;
+
+    align-items:flex-start;
+
+    background-position:
+    72% center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .hero h1{
+    font-size:clamp(2.7rem,11vw,4rem);
+
+    line-height:0.95;
+
+    letter-spacing:-2px;
+
+    margin-bottom:18px;
+  }
+
+  .hero p{
+    font-size:1rem;
+
+    line-height:1.6;
+
+    margin-bottom:24px;
+
+    max-width:100%;
+  }
+
+  .hero-btn{
+    width:100%;
+
+    justify-content:center;
+
+    padding:
+    18px 24px;
+  }
+
+  .hero-proof{
+    gap:10px;
+  }
+
+  .hero-proof span{
+    font-size:0.78rem;
+
+    padding:
+    8px 14px;
+  }
+
+  /* ORBIT */
+
+  .orbit-badge{
+    width:140px;
+    height:140px;
+
+    right:-20px;
+    top:68%;
+  }
+
+  .orbit-content{
+    width:90px;
+    height:90px;
+
+    font-size:0.7rem;
+  }
+
+}
 
