@@ -26,7 +26,7 @@ body{
 .navbar{
   width:100%;
 
-  position:fixed;
+  position:relative;
 
   top:0;
   left:0;
@@ -138,7 +138,7 @@ body{
   justify-content:flex-start;
 
   padding:
-  140px 6% 0 6%;
+  120px 6% 6%;
 
   position:relative;
 
@@ -146,9 +146,9 @@ body{
 
   isolation:isolate;
 
-  background-size:cover;
-  background-position:center center;
-  background-repeat:no-repeat;
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero::before{
@@ -511,6 +511,53 @@ body{
   }
 }
 
+.fde-section {
+  padding: 80px 5%;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+}
+
+.fde-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fde-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.fde-section p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.fde-benefits {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.fde-btn {
+  display: inline-block;
+  padding: 16px 28px;
+  background: #ff8800;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.fde-btn:hover {
+  transform: scale(1.03);
+}
 
 .metric{
   background:rgba(255,255,255,0.03);
@@ -987,112 +1034,166 @@ body{
   animation-delay:0.55s;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE LAYOUT
+========================= */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-  /* NAVBAR */
+  /* =========================
+     NAVBAR
+  ========================= */
 
-  .navbar{
-    padding:
-    18px 5%;
+  .navbar {
+    padding: 14px 5%;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
-    gap:12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
-  .nav-links{
-    display:none;
+  .nav-links {
+    display: none;
   }
 
-  .nav-logo{
-    font-size:1rem;
+  .nav-logo {
+    font-size: 1rem;
   }
 
-  .nav-btn{
-    padding:
-    12px 18px;
-
-    font-size:0.82rem;
-
-    border-radius:12px;
+  .nav-btn {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    border-radius: 10px;
   }
 
-  /* HERO */
+  /* =========================
+     HERO (FUNDO / BACKGROUND)
+  ========================= */
 
-  .hero{
-    height:auto;
+  .hero {
+    min-height: 100vh;
+    height: auto;
 
-    min-height:100vh;
+    padding: 110px 5% 60px 5%;
 
-    padding:
-    140px 5% 80px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-    align-items:flex-start;
-
-    background-position:
-    72% center;
+     background-image: none;
+    background-color: #0f0f0f; /* ou branco, depende do seu design */
   }
 
-  .hero-content{
-    max-width:100%;
+@media (max-width: 768px) {
+  .hero-image-mobile {
+    display: block;
+    width: 100%;
+    padding: 0 5%;
+    margin-top: -40px;
   }
 
-  .hero h1{
-    font-size:clamp(2.7rem,11vw,4rem);
-
-    line-height:0.95;
-
-    letter-spacing:-2px;
-
-    margin-bottom:18px;
+  .hero-image-mobile img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
   }
-
-  .hero p{
-    font-size:1rem;
-
-    line-height:1.6;
-
-    margin-bottom:24px;
-
-    max-width:100%;
-  }
-
-  .hero-btn{
-    width:100%;
-
-    justify-content:center;
-
-    padding:
-    18px 24px;
-  }
-
-  .hero-proof{
-    gap:10px;
-  }
-
-  .hero-proof span{
-    font-size:0.78rem;
-
-    padding:
-    8px 14px;
-  }
-
-  /* ORBIT */
-
-  .orbit-badge{
-    width:140px;
-    height:140px;
-
-    right:-20px;
-    top:68%;
-  }
-
-  .orbit-content{
-    width:90px;
-    height:90px;
-
-    font-size:0.7rem;
-  }
-
 }
 
+  /* opcional: melhora leitura do texto no mobile */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+  }
+
+  /* =========================
+     HERO H1
+  ========================= */
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+
+    margin-bottom: 14px;
+  }
+
+  /* =========================
+     HERO PARÁGRAFO
+  ========================= */
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+
+    max-width: 100%;
+    opacity: 0.9;
+  }
+
+  /* =========================
+     BOTÃO (CTA)
+  ========================= */
+
+  .hero-btn {
+    width: 100%;
+    max-width: 340px;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 16px 18px;
+
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+
+  /* =========================
+     PROVA SOCIAL (SE EXISTIR)
+  ========================= */
+
+  .hero-proof {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .hero-proof span {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  /* =========================
+     ORBIT (AJUSTE VISUAL)
+  ========================= */
+
+  .orbit-badge {
+    width: 120px;
+    height: 120px;
+
+    right: -25px;
+    top: 70%;
+  }
+
+  .orbit-content {
+    width: 80px;
+    height: 80px;
+    font-size: 0.65rem;
+  }
+}

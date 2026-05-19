@@ -111,14 +111,15 @@ useEffect(() => {
   </nav>
 
   <a
-    href="https://wa.me/5583999999999"
+    href="https://wa.me/5583991990598"
     target="_blank"
     className="nav-btn"
   >
-    Solicitar site
+    Fale Comigo
   </a>
 
 </header>
+
 
 
       {/* HERO */}
@@ -141,47 +142,48 @@ useEffect(() => {
   <div className="hero-content">
 
     <h1>
-    
 <h1>
   Transforme sua presença digital
   em uma 
   <span> máquina de vendas.</span>
 </h1>
-
-
-
     </h1>
 
     <p>
-  
 <p>
   Hoje, empresas que vendem mais possuem algo em comum:
   uma presença digital forte. Um site premium ou landing page
-  bem construída 
-  
+  bem construída
   <span> aumenta autoridade, </span>
-  
   gera mais confiança
   e potencializa suas vendas — seja no seu e-commerce,
   lançamento de infoproduto, escritório, empresa local
   ou <span> marca pessoal. </span>
 </p>
-
     </p>
 
     <a
-      href="https://wa.me/5583999999999"
+      href="https://wa.me/5583991990598"
       target="_blank"
       className="hero-btn"
     >
-      Quero meu site agora
+      Quero vender mais todos os dias
     </a>
-
   </div>
+<div className="orbit-badge">
+  <div className="orbit-circle"></div>
+  <div className="orbit-content">
+    vender mais
+    <br />
+    todos os dias
+  </div>
+
+</div>
+
 
 </section>
 
-   
+
 {/* LOGO MARQUEE */}
 <section className="logo-marquee reveal delay-5">
   <div className="marquee-track">
@@ -225,7 +227,6 @@ useEffect(() => {
 
   </div>
 </section>
-
       {/* BENEFITS */}
       <section className="benefits reveal delay-2" id="benefits">
         <div className="section-header">
@@ -308,7 +309,7 @@ useEffect(() => {
           </ul>
 
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5583991990598"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -358,7 +359,7 @@ useEffect(() => {
           </div>
 
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5583991990598"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary big-btn"
@@ -377,7 +378,7 @@ useEffect(() => {
         </h2>
 
         <p>
-          © 2026 Gabriel Batista — Criação de sites e landing pages premium.
+          © 2026 Gabriel Batista . Todos os direitos reservados.
         </p>
       </footer>
     </div>
